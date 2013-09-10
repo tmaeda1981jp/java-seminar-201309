@@ -9,7 +9,7 @@ public class CacheBookViewer {
     }
     
     public void show(String month) {
-        System.out.println(month + "月の収支");
+        System.out.printf("%s年%s月の収支\n", month.substring(0, 4), month.substring(4, 6));
         System.out.println("-------------------");
         for (Item item: book.getItems(month)) {
             System.out.println(item);
